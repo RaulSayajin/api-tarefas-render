@@ -56,9 +56,10 @@ app.delete("/tarefas/:id", (req, res) => {
 app.get("/", (req, res) => {
   res.json({
     status: "API de Tarefas rodando com CI/CD no Render",
-    versao: "1.0.2",
+    versao: "1.0.3",
     emoji: ":rocket:",
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
+    dataCriacaoApi: "2026-05-29"
   });
 });
 
